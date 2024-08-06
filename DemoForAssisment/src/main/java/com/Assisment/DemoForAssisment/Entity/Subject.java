@@ -33,7 +33,7 @@ public class Subject {
 
     
 	@ManyToMany(mappedBy = "subjects")
-  //  @JsonBackReference
+  @JsonBackReference
 //    @JsonIgnore
     private Set<Student> students = new HashSet<>();
 
